@@ -1,12 +1,17 @@
 
 import React from "react";
-import './../styles/App.css';
+import styles from "./buttoncounter.module.css" ;
+import { useState } from "react";
 
 const App = () => {
   return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
+   <>
+            <div className={styles.counter}>
+                <p className={styles.para}>Button clicked {count} times</p>
+                <button className={styles.button} onClick={displayCount}>Submit</button>
+            </div>
+            <button className={styles.button} onClick={decrementCount}>Decrement</button>
+        </>
   )
 }
 
