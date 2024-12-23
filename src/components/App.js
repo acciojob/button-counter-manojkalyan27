@@ -8,17 +8,12 @@ const App = () => {
     const displayCount = ()=>{
         setCount(count + 1);
     };
-
-    const decrementCount =()=>{
-        setCount(count - 1);
-    };
   return (
    <>
             <div className={styles.counter}>
                 <p className={styles.para}>Button clicked {count} times</p>
                 <button className={styles.button} onClick={displayCount}>Submit</button>
             </div>
-            <button className={styles.button} onClick={decrementCount}>Decrement</button>
         </>
   )
 }
